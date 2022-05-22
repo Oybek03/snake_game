@@ -1,0 +1,21 @@
+.img-container {
+  position: relative;
+}
+.weather-title {
+  position: absolute;
+  bottom: 50%;
+  left: 35%;
+  color: #f7f6f2;
+}
+.harorat {
+  font-size: 70px;
+}
+img {
+  width: 100vw;
+  height: 90vh;
+  filter: blur(2px);
+}
+.big-container {
+  display: flex;
+  gap: 20px;
+}
