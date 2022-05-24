@@ -32,6 +32,7 @@ class App extends React.Component {
     this.checkIfEat();
   }
   onKeyDown = (e) => {
+    console.log(e);
     e = e || window.event;
     switch (e.keyCode) {
       case 38:
@@ -122,7 +123,20 @@ class App extends React.Component {
     return (
       <div>
         <div className="game-area">
-          J.O.X
+          <h1 className="jt --debug">
+            <span className="jt__row">
+              <span className="jt__text">J.O.X</span>
+            </span>
+            <span className="jt__row jt__row--sibling" aria-hidden="true">
+              <span className="jt__text">J.O.X</span>
+            </span>
+            <span className="jt__row jt__row--sibling" aria-hidden="true">
+              <span className="jt__text">J.O.X</span>
+            </span>
+            <span className="jt__row jt__row--sibling" aria-hidden="true">
+              <span className="jt__text">J.O.X</span>
+            </span>
+          </h1>
           <Snake snakeDots={this.state.snakeDots} />
           <Food dot={this.state.food} />
         </div>
